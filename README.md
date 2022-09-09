@@ -2,7 +2,7 @@
 보드게임 추천 웹 서비스
 
 <br><br>  
-# Overview
+# 목차
 1. [프로젝트 소개](#1-프로젝트-소개)  
 2. [프로젝트 목표](#2-프로젝트-목표)  
 3. [프로젝트 기능 설명](#3-프로젝트-기능-설명)
@@ -45,12 +45,12 @@
 
 ## 데이터 전처리
 
--   Data에서 필요한 feature을 추출 진행
-    -   데이터 셋 축소를 위해 2022년 1월 19일 기준으로 rank 500위 안에 드는 data set을 선별했다.
-    -   축소된 데이터 셋의 보드게임 추천시스템 구축 과 시각화 및 워드 클라우드에 필요한 feature를 선별하여 병합하는 데이터 전처리 과정을 진행했다.(player 수, 게임 time, 랭킹, image URL, 게임 설명, 게임 난이도, 게임 나이 제한, 게임 카테고리, 게임 제작년도 등등)
--   추천 시스템 구축
-    -   Item-based CF을 이용하기 위해 2022년 1월 8일의 랭킹의 500위안에든 게임중 2019년 5월까지 1600만개의 유저가 보드게임에 대한 평가정보를 filtering과정을 진행했다.
-    -   이를 유저 - 게임 에대한 평가의 matrix를 구성하여 cosine similarity를 통해 유사한 게임 5개를 추출하여 새로운 feature로 recommandation list를 만들어 추가하였다.
+- Data에서 필요한 feature을 추출 진행
+    - 데이터 셋 축소를 위해 2022년 1월 19일 기준으로 rank 500위 안에 드는 data set을 선별했다.
+    - 축소된 데이터 셋의 보드게임 추천시스템 구축 과 시각화 및 워드 클라우드에 필요한 feature를 선별하여 병합하는 데이터 전처리 과정을 진행했다.(player 수, 게임 time, 랭킹, image URL, 게임 설명, 게임 난이도, 게임 나이 제한, 게임 카테고리, 게임 제작년도 등등)
+- 추천 시스템 구축
+    - Item-based CF을 이용하기 위해 2022년 1월 8일의 랭킹의 500위안에든 게임중 2019년 5월까지 1600만개의 유저가 보드게임에 대한 평가정보를 filtering과정을 진행했다.
+    - 이를 유저 - 게임 에대한 평가의 matrix를 구성하여 cosine similarity를 통해 유사한 게임 5개를 추출하여 새로운 feature로 recommandation list를 만들어 추가하였다.
 
 <br>  
 
@@ -66,28 +66,24 @@
 
 ## 사용한 라이브러리 및 도구
 
-**recommend system**
-
+#### recommend system
 -   sickit-learn
 -   pandas
 
-**wordcloud**
-
+#### wordcloud
 -   wordCloud
 -   nltk
 -   googletrans
 -   pandas
 -   colab
 
-**Front**
-
+#### Front
 -   mui
 -   react-chartjs-2
 -   redux
 -   aws-sdk
 
-**Back**
-
+#### Back
 -   nodemailer
 -   redis
 
